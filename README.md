@@ -2,11 +2,11 @@
   <h1>Standard Version Expo 2</h1>
   <p>Automatic <a href="https://github.com/expo/expo">Expo</a> versioning with <a href="https://github.com/conventional-changelog/standard-version">Standard Version</a></p>
   <p>
-    <a href="https://github.com/expo-community/standard-version-expo/releases">
-      <img src="https://img.shields.io/github/release/expo-community/standard-version-expo/all.svg" alt="releases" />
+    <a href="https://github.com/bilwifi/standard-version-expo/releases">
+      <img src="https://img.shields.io/github/release/bilwifi/standard-version-expo/all.svg" alt="releases" />
     </a>
-    <a href="https://github.com/expo-community/standard-version-expo/actions">
-      <img src="https://img.shields.io/github/workflow/status/expo-community/standard-version-expo/CI/master.svg" alt="builds" />
+    <a href="https://github.com/bilwifi/standard-version-expo/actions">
+      <img src="https://img.shields.io/github/workflow/status/bilwifi/standard-version-expo/CI/master.svg" alt="builds" />
     </a>
     <a href="https://dev.to/bycedric/simplify-expo-releases-with-standard-version-2f4o">
       <img src="https://img.shields.io/badge/guide-dev.to-lightgrey" alt="guide" />
@@ -19,7 +19,7 @@
 
 ## Note
 
-#### standard-version-expo-2 is an enhancement of [expo-community/standard-version-expo](https://github.com/expo-community/standard-version-expo). The original repository is no longer maintained and has pull requests pending response.
+#### standard-version-expo-2 is an enhancement of [bilwifi/standard-version-expo](https://github.com/bilwifi/standard-version-expo). The original repository is no longer maintained and has pull requests pending response.
 
 ## What's inside?
 
@@ -105,7 +105,7 @@ It's a deterministic solution that removes some of the ambiguity of incremental 
 
 Allows to obtain the version code of a target version taking into account the pre-release.
 
-It is designed for Android inspired by Maxi Rosson's approach and to solve [this problem](https://github.com/expo-community/standard-version-expo/issues/21)
+It is designed for Android inspired by Maxi Rosson's approach and to solve [this problem](https://github.com/bilwifi/standard-version-expo/issues/21)
 
 
 
@@ -120,7 +120,7 @@ It is designed for Android inspired by Maxi Rosson's approach and to solve [this
   <br />
   with :heart: <strong>byPeniel</strong>
   <br />
-  from <a href="https://github.com/expo-community/standard-version-expo" target="_blank">standard-version-expo ByCedric</a>
+  from <a href="https://github.com/bilwifi/standard-version-expo" target="_blank">standard-version-expo ByCedric</a>
 </div>
 
 [link-conventional]: https://www.conventionalcommits.org/en/v1.0.0/
