@@ -1,5 +1,7 @@
 import { AppJSONConfig, getExpoSDKVersion } from '@expo/config';
-import { coerce as semver } from 'semver';
+import { prerelease, coerce as semver } from 'semver';
+
+import { TAG_EQUIVALENT_VALUES } from './constants';
 
 /**
  * Get the version code from a manifest and target version.
@@ -21,4 +23,55 @@ export function getVersionCode(manifest: AppJSONConfig, version: string): number
   }
 
   return expo.major * 10000000 + target.major * 10000 + target.minor * 100 + target.patch;
+}
+
+/**
+ * Get the release code from a target release with pre-release consideration.
+ * It is designed for Android based on Maxi Rosson's approach and to address this issue:
+ * @see https://github.com/expo-community/standard-version-expo/issues/21
+ */
+export function getVersionCodeWithPrerelease(version: string): number {
+  const target = semver(version);
+
+  if (!target) {
+    throw new Error('Could not parse the new version from standard version.');
+  }
+  const { tagValue, prereleaseValue } = getPrereleaseEquivalentValue(prerelease(version));
+
+  return (
+    target.major * 10000000 +
+    target.minor * 100000 +
+    target.patch * 1000 +
+    tagValue * 100 +
+    prereleaseValue
+  );
+}
+
+function getEquivalentTagValueSemver(tag: string): number {
+  return TAG_EQUIVALENT_VALUES.find((t) => t.tag === tag)?.value || 0;
+}
+
+function getPrereleaseEquivalentValue(prereleases: string | any[] | readonly string[] | null) {
+  let tagValue = 0;
+  let prereleaseValue = 0;
+
+  if (prereleases === null)
+    return {
+      tagValue,
+      prereleaseValue,
+    };
+
+  if (prereleases.length && prereleases.length < 9) {
+    if (typeof prereleases[0] === 'string') {
+      tagValue = getEquivalentTagValueSemver(prereleases[0]);
+    }
+    if (prereleases[1] && typeof prereleases[1] === 'number') {
+      prereleaseValue = prereleases[1];
+    }
+  }
+
+  return {
+    tagValue,
+    prereleaseValue,
+  };
 }

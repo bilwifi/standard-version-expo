@@ -1,6 +1,6 @@
 {
-  "name": "standard-version-expo",
-  "version": "1.0.3",
+  "name": "standard-version-expo-2",
+  "version": "1.1.0",
   "description": "Automatic Expo versioning with Standard Version",
   "keywords": [
     "expo",
@@ -9,15 +9,26 @@
     "release",
     "bycedric"
   ],
-  "author": "Cedric van Putten <me@bycedric.com> (https://bycedric.com)",
+  "authors": [
+    {
+      "name": "Cedric van Putten",
+      "email": "me@bycedric.com",
+      "url": "https://bycedric.com"
+    },
+    {
+      "name": "Peniel DIAlUNDAMA",
+      "email": "dialundamapeniel@gmail.com",
+      "url": "https://penieldialu.is-a.dev"
+    }
+  ],
   "license": "MIT",
-  "homepage": "https://github.com/expo-community/standard-version-expo#readme",
+  "homepage": "https://github.com/bilwifi/standard-release-notes#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/expo-community/standard-version-expo.git"
+    "url": "https://github.com/bilwifi/standard-release-notes.git"
   },
   "bugs": {
-    "url": "https://github.com/expo-community/standard-version-expo/issues"
+    "url": "https://github.com/bilwifi/standard-release-notes/issues"
   },
   "main": "manifest/version.js",
   "files": [
