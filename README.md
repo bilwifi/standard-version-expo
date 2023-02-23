@@ -112,10 +112,12 @@ It is designed for Android inspired by Maxi Rosson's approach and to solve [this
 
 > This method takes into account pre-release tags and defines an equivalence in integer value. (alpha:1; beta:2; rc:3)
 
+![img-version-code-with-prerelease](./assets/img/version-code-with-prerelease.svg)
 
-<div align="center">
+<!-- <div align="center">
 <img src="./assets/img/version-code-with-prerelease.svg">
-</div>
+</div> -->
+
 <div align="center">
   <br />
   with :heart: <strong>byPeniel</strong>
