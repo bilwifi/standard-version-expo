@@ -105,7 +105,7 @@ It's a deterministic solution that removes some of the ambiguity of incremental 
 
 Allows to obtain the version code of a target version taking into account the pre-release.
 
-It is designed for Android inspired by Maxi Rosson's approach and to solve [this problem](https://github.com/bilwifi/standard-version-expo/issues/21)
+It is designed for Android inspired by Maxi Rosson's approach and to solve [this problem](https://github.com/expo-community/standard-version-expo/issues/21)
 
 
 
