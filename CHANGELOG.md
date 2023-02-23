@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.1](https://github.com/bilwifi/standard-release-notes/compare/1.1.0...1.1.1) (2023-02-23)
+
 ## [1.1.0](https://github.com/bilwifi/standard-release-notes/compare/1.1.0-beta.0...1.1.0) (2023-02-23)
 
 
