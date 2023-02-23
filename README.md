@@ -77,22 +77,22 @@ Standard Version's version bumpers are pretty simple; each bump only updates a s
 This package exposes multiple kinds of updaters, for different areas of the manifest.
 You can "compose" your own set of `bumpFiles` entries to suit your needs.
 
-| updater             | example         | description                                                                                                         |
-| ------------------- | --------------- | ------------------------------------------------------------------------------------------------------------------- |
-| `<root>`            | `3.2.1`         | _alias of `manifest/version`_                                                                                       |
-| `manifest`          | `3.2.1`         | _alias of `manifest/version`_                                                                                       |
-| `manifest/version`  | `3.2.1`         | Replace `expo.version` with the exact calculated semver.                                          |
-| `android`           | `360030201`     | _alias of `android/code`_                                                                                           |
-| `android/code`      | `350010000`     | Replace `expo.android.versionCode` with the [method described by Maxi Rosson][link-version-code].  |
-| `android/increment` | `8`             | Replace `expo.android.versionCode` with an incremental version.                                                     |
-| `android/code-with-prerelease` | `30201000`  | Replace `expo.android.versionCode` with the [method described by Maxi Rosson][link-version-code]. (**recommended**) |
+| updater                        | example     | description                                                                                                         |
+| ------------------------------ | ----------- | ------------------------------------------------------------------------------------------------------------------- |
+| `<root>`                       | `3.2.1`     | _alias of `manifest/version`_                                                                                       |
+| `manifest`                     | `3.2.1`     | _alias of `manifest/version`_                                                                                       |
+| `manifest/version`             | `3.2.1`     | Replace `expo.version` with the exact calculated semver. (**recommended**)                                          |
+| `android`                      | `360030201` | _alias of `android/code`_                                                                                           |
+| `android/code`                 | `350010000` | Replace `expo.android.versionCode` with the [method described by Maxi Rosson][link-version-code].                   |
+| `android/code-with-prerelease` | `30201000`  | Replace `expo.android.versionCode` with the [method described by Maxi Rosson][link-version-code]. (**recommended**) || `android/timestamp` | `1642622748128` | Replace `expo.android.versionCode` with the result of `Date.now()`.                                                 |
 | `android/timestamp` | `1642622748128` | Replace `expo.android.versionCode` with the result of `Date.now()`.                                                 |
-| `ios`               | `3.2.1`         | _alias of `ios/version`_                                                                                            |
-| `ios/code`          | `360030201`     | Replace `expo.ios.buildNumber` with the [method described by Maxi Rosson][link-version-code].                       |
-| `ios/increment`     | `9`             | Replace `expo.ios.buildNumber` with an incremental version.                                                         |
-| `ios/version`       | `3.2.1`         | Replace `expo.ios.buildNumber` with the exact calculated semver.                                   |
-| `ios/code-with-prerelease`     | `30201000`  | Replace `expo.ios.buildNumber` with the [method described by Maxi Rosson][link-version-code].(**recommended**)                       |
+| `android/increment`            | `8`         | Replace `expo.android.versionCode` with an incremental version.                                                     |
+| `ios`                          | `3.2.1`     | _alias of `ios/version`_                                                                                            |
+| `ios/code`                     | `360030201` | Replace `expo.ios.buildNumber` with the [method described by Maxi Rosson][link-version-code].                       |
+| `ios/code-with-prerelease`     | `30201000`  | Replace `expo.ios.buildNumber` with the [method described by Maxi Rosson][link-version-code].                       |
 | `ios/timestamp`     | `1642622748128` | Replace `expo.ios.buildNumber` with the result of `Date.now()`.                                                     |
+| `ios/increment`                | `9`         | Replace `expo.ios.buildNumber` with an incremental version.                                                         |
+| `ios/version`                  | `3.2.1`     | Replace `expo.ios.buildNumber` with the exact calculated semver. (**recommended**)                                  |
 
 ### Version code
 
@@ -109,17 +109,19 @@ Allows to obtain the version code of a target version taking into account the pr
 
 It is designed for Android inspired by Maxi Rosson's approach and to solve [this problem](https://github.com/expo-community/standard-version-expo/issues/21)
 
-![Version code with prerelease img](assets/img/version-code-with-prerelease.svg)
-
-<!-- <img src="./assets/img/version-code-with-prerelease.svg"> -->
-
 > This method takes into account pre-release tags and defines an equivalence in integer value. (alpha:1; beta:2; rc:3)
+
+![img-version-code-with-prerelease](./assets/img/version-code-with-prerelease.svg)
+
+<!-- <div align="center">
+<img src="./assets/img/version-code-with-prerelease.svg">
+</div> -->
 
 <div align="center">
   <br />
   with :heart: <strong>byPeniel</strong>
   <br />
-  from [standard-version-expo](https://github.com/expo-community/standard-version-expo) ByCedric
+  from <a href="https://github.com/bilwifi/standard-version-expo" target="_blank">standard-version-expo ByCedric</a>
 </div>
 
 [link-conventional]: https://www.conventionalcommits.org/en/v1.0.0/
@@ -128,3 +130,4 @@ It is designed for Android inspired by Maxi Rosson's approach and to solve [this
 [link-expo-version]: https://docs.expo.io/versions/latest/workflow/configuration#version
 [link-standard-version]: https://github.com/conventional-changelog/standard-version#configuration
 [link-version-code]: https://medium.com/@maxirosson/versioning-android-apps-d6ec171cfd82
+[link-version-code-with-prerelease]: #version-code-with-prerelease
