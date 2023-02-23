@@ -1,5 +1,6 @@
 # The MIT License (MIT)
 
+Copyright (c) 2023 Peniel DIALUNDAMA <dialundamapeniel@gmail.com>
 Copyright (c) 2019-present Cedric van Putten <me@bycedric.com>
 
 > Permission is hereby granted, free of charge, to any person obtaining a copy
