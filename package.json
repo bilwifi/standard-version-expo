@@ -22,13 +22,13 @@
     }
   ],
   "license": "MIT",
-  "homepage": "https://github.com/bilwifi/standard-release-notes#readme",
+  "homepage": "https://github.com/bilwifi/standard-version-expo#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bilwifi/standard-release-notes.git"
+    "url": "https://github.com/bilwifi/standard-version-expo.git"
   },
   "bugs": {
-    "url": "https://github.com/bilwifi/standard-release-notes/issues"
+    "url": "https://github.com/bilwifi/standard-version-expo/issues"
   },
   "main": "manifest/version.js",
   "files": [
