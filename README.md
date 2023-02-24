@@ -111,6 +111,7 @@ Allows to obtain the version code of a target version taking into account the pr
 
 It is designed for Android inspired by Maxi Rosson's approach and to solve [this problem](https://github.com/expo-community/standard-version-expo/issues/21)
 
+
 > This method takes into account pre-release tags and defines an equivalence in integer value. (alpha:1; beta:2; rc:3)
 
 ![img-version-code-with-prerelease](./assets/img/version-code-with-prerelease.svg)

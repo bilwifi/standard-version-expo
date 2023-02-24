@@ -20,6 +20,7 @@ All notable changes to this project will be documented in this file. See [standa
 ### [1.1.1](https://github.com/bilwifi/standard-release-notes/compare/1.1.0...1.1.1) (2023-02-23)
 
 
+
 ## [1.1.0](https://github.com/bilwifi/standard-release-notes/compare/1.1.0-beta.0...1.1.0) (2023-02-23)
 
 
