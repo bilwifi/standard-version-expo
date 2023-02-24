@@ -2,7 +2,33 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/bilwifi/standard-release-notes/compare/1.2.0-beta.0...1.2.0) (2023-02-24)
+
 ### [1.1.1](https://github.com/bilwifi/standard-release-notes/compare/1.1.0...1.1.1) (2023-02-23)
+
+
+### Other chores
+
+* create new release 1.1.1 ([7fa916c](https://github.com/bilwifi/standard-release-notes/commit/7fa916cbf881fa90af9e89901fdefce1f0222c34))
+
+## [1.2.0-beta.0](https://github.com/bilwifi/standard-release-notes/compare/1.1.0...1.2.0-beta.0) (2023-02-24)
+
+
+### New features
+
+* added the 'timestamp' bumper to bump the versionCode or buildNumber to Date.now() ([0bb19fb](https://github.com/bilwifi/standard-release-notes/commit/0bb19fb6ca5ecfe1e1332e8c2ba09445c3af6957))
+
+
+### Other chores
+
+* create new release 1.1.0 ([8db6ced](https://github.com/bilwifi/standard-release-notes/commit/8db6ced4bd6dce43a73e4074eef927913adf04d6))
+* create new release 1.1.0-beta.0 ([fb5f892](https://github.com/bilwifi/standard-release-notes/commit/fb5f892861c0916b647dbd52e7eb25dbdabdf580))
+* create new release 1.1.0-beta.1 ([5fea8a0](https://github.com/bilwifi/standard-release-notes/commit/5fea8a06429c318d43d8c88406fba14ef75803d2))
+* create new release 1.1.1 ([ebc0e5a](https://github.com/bilwifi/standard-release-notes/commit/ebc0e5aa226059c15e651856558229f5f0e230d1))
+
+### [1.1.1](https://github.com/bilwifi/standard-release-notes/compare/1.1.0...1.1.1) (2023-02-23)
+
+
 
 ## [1.1.0](https://github.com/bilwifi/standard-release-notes/compare/1.1.0-beta.0...1.1.0) (2023-02-23)
 

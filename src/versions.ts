@@ -51,7 +51,7 @@ function getEquivalentTagValueSemver(tag: string): number {
   return TAG_EQUIVALENT_VALUES.find((t) => t.tag === tag)?.value || 0;
 }
 
-function getPrereleaseEquivalentValue(prereleases: string | any[] | readonly string[] | null) {
+function getPrereleaseEquivalentValue(prereleases: readonly string[] | null) {
   let tagValue = 0;
   let prereleaseValue = 0;
 
