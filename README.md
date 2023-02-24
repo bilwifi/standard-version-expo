@@ -19,7 +19,9 @@
 
 ## Note
 
+
 #### standard-version-expo-2 is an enhancement of [expo-community/standard-version-expo](https://github.com/expo-community/standard-version-expo). The original repository is no longer maintained and has pull requests pending response.
+
 
 ## What's inside?
 
@@ -116,6 +118,7 @@ It is designed for Android inspired by Maxi Rosson's approach and to solve [this
 <!-- <div align="center">
 <img src="./assets/img/version-code-with-prerelease.svg">
 </div> -->
+
 
 <div align="center">
   <br />
